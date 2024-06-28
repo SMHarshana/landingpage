@@ -102,13 +102,117 @@
             background-color: #0056b3;
         }
 
+        /* About Us section styles */
+        .about {
+            margin-bottom: 40px;
+        }
+
+        .about h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        /* Services section styles */
+        .services {
+            margin-bottom: 40px;
+        }
+
+        .services h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .services .service {
+            margin-bottom: 20px;
+        }
+
+        .services .service h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .services .service p {
+            font-size: 1.1rem;
+        }
+
+        /* Testimonials section styles */
+        .testimonials {
+            background-color: #f1f1f1;
+            padding: 20px;
+            margin-bottom: 40px;
+        }
+
+        .testimonials h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .testimonials .testimonial {
+            margin-bottom: 20px;
+        }
+
+        .testimonials .testimonial p {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
+        .testimonials .testimonial .author {
+            font-weight: bold;
+        }
+
+        /* Contact Us section styles */
+        .contact {
+            margin-bottom: 40px;
+        }
+
+        .contact h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .contact form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact form label {
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+
+        .contact form input,
+        .contact form textarea {
+            font-size: 1rem;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact form input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .contact form input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
         /* Footer styles */
         footer {
             background-color: #333;
             color: #fff;
             text-align: center;
             padding: 10px 0;
-            position: absolute;
+            position: relative;
             bottom: 0;
             width: 100%;
         }
@@ -130,16 +234,66 @@
     <a href="#">Home</a>
     <a href="#">About</a>
     <a href="#">Services</a>
+    <a href="#">Testimonials</a>
     <a href="#">Contact</a>
 </nav>
 
 <div class="main">
     <div class="container content">
         <h2>Welcome to Our Site</h2>
-        <p>Explore the variety of services we offer to meet your needs and exceed your expectationstessss.</p>
+        <p>Explore the variety of services we offer to meet your needs and exceed your expectations.</p>
         <a href="#" class="cta">Learn More</a>
     </div>
     <img src="https://via.placeholder.com/400" alt="Placeholder Image" style="max-width: 400px; height: auto;">
+</div>
+
+<div class="about container">
+    <h2>About Us</h2>
+    <p>We are a professional service provider dedicated to helping you achieve your goals. With a team of experienced professionals, we offer a wide range of services tailored to meet your needs.</p>
+</div>
+
+<div class="services container">
+    <h2>Our Services</h2>
+    <div class="service">
+        <h3>Consulting</h3>
+        <p>We provide expert consulting services to help you navigate complex challenges and achieve success.</p>
+    </div>
+    <div class="service">
+        <h3>Development</h3>
+        <p>Our development team can create custom solutions to meet your unique requirements.</p>
+    </div>
+    <div class="service">
+        <h3>Support</h3>
+        <p>We offer ongoing support to ensure your operations run smoothly and efficiently.</p>
+    </div>
+</div>
+
+<div class="testimonials container">
+    <h2>What Our Clients Say</h2>
+    <div class="testimonial">
+        <p>"The team at Professional Landing was fantastic to work with. They exceeded our expectations in every way."</p>
+        <p class="author">- John Doe</p>
+    </div>
+    <div class="testimonial">
+        <p>"Their expertise and dedication are unmatched. We couldn't be happier with the results."</p>
+        <p class="author">- Jane Smith</p>
+    </div>
+</div>
+
+<div class="contact container">
+    <h2>Contact Us</h2>
+    <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <input type="submit" value="Send Message">
+    </form>
 </div>
 
 <footer>
