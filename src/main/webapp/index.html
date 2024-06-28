@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Landing Page</title>
+    <title>Alex's Portfolio</title>
     <style>
         /* Resetting default styles */
         * {
@@ -70,6 +70,7 @@
             align-items: center;
             justify-content: space-between;
             margin-bottom: 40px;
+            padding: 20px;
         }
 
         .main .content {
@@ -102,9 +103,10 @@
             background-color: #0056b3;
         }
 
-        /* About Us section styles */
+        /* About Me section styles */
         .about {
             margin-bottom: 40px;
+            padding: 20px;
         }
 
         .about h2 {
@@ -117,57 +119,31 @@
             margin-bottom: 20px;
         }
 
-        /* Services section styles */
-        .services {
+        /* Qualifications section styles */
+        .qualifications {
             margin-bottom: 40px;
-        }
-
-        .services h2 {
-            font-size: 2rem;
-            margin-bottom: 20px;
-        }
-
-        .services .service {
-            margin-bottom: 20px;
-        }
-
-        .services .service h3 {
-            font-size: 1.5rem;
-            margin-bottom: 10px;
-        }
-
-        .services .service p {
-            font-size: 1.1rem;
-        }
-
-        /* Testimonials section styles */
-        .testimonials {
-            background-color: #f1f1f1;
             padding: 20px;
-            margin-bottom: 40px;
         }
 
-        .testimonials h2 {
+        .qualifications h2 {
             font-size: 2rem;
             margin-bottom: 20px;
         }
 
-        .testimonials .testimonial {
-            margin-bottom: 20px;
+        .qualifications ul {
+            list-style-type: disc;
+            margin-left: 20px;
         }
 
-        .testimonials .testimonial p {
+        .qualifications li {
             font-size: 1.1rem;
             margin-bottom: 10px;
         }
 
-        .testimonials .testimonial .author {
-            font-weight: bold;
-        }
-
-        /* Contact Us section styles */
+        /* Contact Me section styles */
         .contact {
             margin-bottom: 40px;
+            padding: 20px;
         }
 
         .contact h2 {
@@ -225,63 +201,35 @@
 <body>
 <header>
     <div class="container">
-        <h1>Professional Landing Page</h1>
-        <p>Your gateway to success</p>
+        <h1>HARSHANA SAMARAKOON</h1>
+        <p>Systems Engineer</p>
     </div>
 </header>
 
 <nav>
     <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Testimonials</a>
-    <a href="#">Contact</a>
+    <a href="#about">About Me</a>
+    <a href="#qualifications">Qualifications</a>
+    <a href="#contact">Contact</a>
 </nav>
 
-<div class="main">
-    <div class="container content">
-        <h2>Welcome to Our Site</h2>
-        <p>Explore the variety of services we offer to meet your needs and exceed your expectations.</p>
-        <a href="#" class="cta">Learn More</a>
-    </div>
-    <img src="https://via.placeholder.com/400" alt="Placeholder Image" style="max-width: 400px; height: auto;">
+<div id="about" class="about container">
+    <h2>About Me</h2>
+    <p>I am a dedicated professional with a passion for technology and problem-solving. With experience in systems engineering and a strong foundation in DevOps principles, I am adept at managing server environments and optimizing system performance.</p>
 </div>
 
-<div class="about container">
-    <h2>About Us</h2>
-    <p>We are a professional service provider dedicated to helping you achieve your goals. With a team of experienced professionals, we offer a wide range of services tailored to meet your needs.</p>
+<div id="qualifications" class="qualifications container">
+    <h2>My Qualifications</h2>
+    <ul>
+        <li>Systems Engineer with hands-on experience in Linux server administration and AWS EC2 deployment.</li>
+        <li>Proficient in setting up and configuring server environments for optimal performance.</li>
+        <li>Familiar with software development processes and version control systems like Git.</li>
+        <li>Currently pursuing a diploma in nursing, with a strong foundation in healthcare informatics.</li>
+    </ul>
 </div>
 
-<div class="services container">
-    <h2>Our Services</h2>
-    <div class="service">
-        <h3>Consulting</h3>
-        <p>We provide expert consulting services to help you navigate complex challenges and achieve success.</p>
-    </div>
-    <div class="service">
-        <h3>Development</h3>
-        <p>Our development team can create custom solutions to meet your unique requirements.</p>
-    </div>
-    <div class="service">
-        <h3>Support</h3>
-        <p>We offer ongoing support to ensure your operations run smoothly and efficiently.</p>
-    </div>
-</div>
-
-<div class="testimonials container">
-    <h2>What Our Clients Say</h2>
-    <div class="testimonial">
-        <p>"The team at Professional Landing was fantastic to work with. They exceeded our expectations in every way."</p>
-        <p class="author">- John Doe</p>
-    </div>
-    <div class="testimonial">
-        <p>"Their expertise and dedication are unmatched. We couldn't be happier with the results."</p>
-        <p class="author">- Jane Smith</p>
-    </div>
-</div>
-
-<div class="contact container">
-    <h2>Contact Us</h2>
+<div id="contact" class="contact container">
+    <h2>Contact Me</h2>
     <form>
         <label for="name">Name</label>
         <input type="text" id="name" name="name" required>
@@ -297,7 +245,7 @@
 </div>
 
 <footer>
-    <p>&copy; 2024 Professional Landing. All rights reserved.</p>
+    <p>&copy; 2024 Alex's Portfolio. All rights reserved.</p>
 </footer>
 </body>
 </html>
